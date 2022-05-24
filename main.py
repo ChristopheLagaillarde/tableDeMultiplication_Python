@@ -7,8 +7,11 @@
 from give_multiplication_table import give_multiplication_table
 
 
-def main():
-    print(give_multiplication_table(int(input("number to multiply: ")), int(input("max multiplier: "))))
+def main() -> None:
+    try:
+        print(give_multiplication_table(int(input("number to multiply: ")), int(input("max multiplier: "))))
+    except ValueError:
+        print("Invalid input")
 
 
 if __name__ == "__main__":
