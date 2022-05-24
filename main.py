@@ -8,7 +8,7 @@ from give_multiplication_table import give_multiplication_table
 
 
 def main():
-    give_multiplication_table(int(input("number to multiply: ")), int(input("max multiplier: ")))
+    print(give_multiplication_table(int(input("number to multiply: ")), int(input("max multiplier: "))))
 
 
 if __name__ == "__main__":

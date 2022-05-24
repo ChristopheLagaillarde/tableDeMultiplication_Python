@@ -4,7 +4,7 @@
 # Author : Christophe LAGAILLARDE
 # Version : 1.0
 
-def give_multiplication_table(number, max_multiplier):
+def give_multiplication_table(number: int, max_multiplier: int) -> list:
     try:
         max_multiplier += 1
         result = [0] * max_multiplier
