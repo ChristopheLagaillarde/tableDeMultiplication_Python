@@ -1,11 +1,16 @@
-import sys
-sys.tracebacklimit = 0
-try:
-    a = int(input("Saisir un nombre"))
+# Program : main
+# Description : execute give_multiplier_table
+# Date : 24/05/22
+# Author : Christophe LAGAILLARDE
+# Version : 1.0
 
-    for i in range(13):
-        print(a, "x", i, "=", a * i)
+from give_multiplication_table import give_multiplication_table
 
-except ValueError:
-    print("saisie non valide")
+
+def main():
+    give_multiplication_table(int(input("number to multiply: ")), int(input("max multiplier: ")))
+
+
+if __name__ == "__main__":
+    main()
 
